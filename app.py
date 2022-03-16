@@ -23,7 +23,7 @@ async def train_model():
 
 
 @app.get('/start_stream')
-async def retrieve_tweets(topic):
+async def start_stream(topic):
     ss.start_stream(topic, False)
     return {"Stream": "started!!!"}
 
